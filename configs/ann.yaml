@@ -1,0 +1,14 @@
+# Evaluation configuration for the Prism ANN experiments.
+parameters:
+  - name: num_tables
+    type: int
+    default: 8
+    description: Number of hash tables in the sketch index.
+  - name: probe_count
+    type: int
+    default: 16
+    description: Number of buckets probed per query.
+  - name: metric
+    type: str
+    default: "cosine"
+    description: Distance metric used for candidate ranking.
